@@ -20,6 +20,13 @@
 Run `go run server.go` to test the server is running
 ```
 
+## Miscellaneous
+```sh
+Update dependency `go get -u`
+Make sure your `payload` line is straightened in tester.go
+```
+
+
 ## Author
 👤 ** Pragmatic Reviews **
 

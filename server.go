@@ -8,6 +8,7 @@ import (
 	"github.com/monkrus/gin-2/middlewares"
 	"github.com/monkrus/gin/controller"
 	"github.com/monkrus/gin/service"
+	gindump "github.com/tpkeeper/gin-dump"
 )
 
 var (
@@ -26,7 +27,7 @@ func main() {
 	setupLogOutput()
 	server := gin.New()
 	// customizing the middleware
-	server.Use(gin.Recovery(), middlewares.Logger(), middlewares.BasicAuth())
+	server.Use(gin.Recovery(), middlewares.Logger(), middlewares.BasicAuth(), gindump.Dump())
 
 	//server.Use(gin.Logger())
 
